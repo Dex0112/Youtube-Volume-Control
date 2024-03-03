@@ -1,0 +1,32 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+    </head>
+
+    <body>
+        <div id="popup-content">
+            <button onclick="SetVolumeToPercent(0.1)">1</button>
+            <button onclick="SetVolumeToPercent(1)">100</button>
+        </div>
+
+        <script >
+            SetVolumeToPercent(0.75);
+
+            function SetVolumeToPercent(volume) {
+                console.log("Setting volume? " + (volume * 100) + "%");
+
+                //var volumeSlider = document.querySelector(".html5-video-player");
+                //var videoElement = volumeSlider.querySelector("video");
+
+                //// Set the volume
+                //videoElement.volume = volume;
+
+                //// Trigger input event on the volume slider to update visually
+                //var inputEvent = new Event("input", { bubbles: true });
+                //volumeSlider.querySelector(".ytp-volume-slider").dispatchEvent(inputEvent);
+            }
+        </script>
+    </body>
+</html>
